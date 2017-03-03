@@ -1,0 +1,17 @@
+---
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  sha: v0.7.1
+  hooks:
+    - id: check-yaml
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  sha: v1.1.0
+  hooks:
+    - id: terraform_fmt
+      files: .*\.tf$
+- repo: local
+  hooks:
+    - id: zip_py_scripts
+      name: Zip python lambda scripts
+      entry: ./zip_py_scripts.sh
+      language: script
+      files: lambda.*\.py$
