@@ -6,7 +6,7 @@ This module can be used to temporarily stop and restart a pre-defined set of EC2
    * `region`: the region where the EC2 instances are located. This is an optional parameter. If no region variable is specified in the calling module, the aws_region data source is used to auto-determine the current region.
 
 The code in the module is based on this article in the AWS user guide:
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
+https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
 
 # Additional notes
 ## Pre-commit hooks
